@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Pakki!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #FFE0E9, #FADBDA);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .cartoon-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 26px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 1.5px 2px rgba(0,0,0,0.08);
+      transition: transform 0.24s;
+      margin: 16px;
+      cursor: pointer;
+    }
+    .cartoon-img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.22), 0 2.5px 4px rgba(0,0,0,0.11);
+    }
+    .container { margin-top: 72px;}
+    h1 {
+      color: #c51162;
+      text-shadow: 2px 2px 9px rgba(0,0,0,0.11);
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <h1>Happy Birthday, Pakki! 🎂</h1>
+    <p class="lead">Click any cartoon to enter the surprise!</p>
+    <div class="d-flex flex-wrap justify-content-center">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/2155/2155225.png" class="cartoon-img" onclick="goTo('countdown.html')" alt="Cake Cartoon" />
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" class="cartoon-img" onclick="goTo('countdown.html')" alt="Balloon Cartoon" />
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="cartoon-img" onclick="goTo('countdown.html')" alt="Gift Cartoon" />
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" class="cartoon-img" onclick="goTo('countdown.html')" alt="Party Cartoon" />
+
+    </div>
+  </div>
+  <script>
+    function goTo(page) {window.location.replace(page);}
+    window.history.forward();
+    function noBack() {window.history.forward();}
+    setTimeout("noBack()", 0);
+    window.onunload=function(){null};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
